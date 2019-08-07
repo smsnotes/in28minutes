@@ -1,11 +1,25 @@
 package com.in28minutes.rest.webservices.restfullwebservices.user;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
 import java.util.Date;
 
+@ApiModel(description = "User model")
 public class User {
 
 	private Integer id;
+
+	@ApiModelProperty(notes = "length grader then 2")
+	@Size(min = 2,message = "Name have to be longer then 2 chars")
+
 	private String name;
+
+	@ApiModelProperty(notes = "only in the past value")
+	@Past(message = "birth date should be in the feature")
 	private Date birthDate;
 
 	public Integer getId() {
