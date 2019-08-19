@@ -1,7 +1,8 @@
 
 version = '1.0.SNAHPSHOT'
+description = "tamir gradle project"
 
- apply plugin:'java'
+apply plugin:'java'
 
 //plugins {
  //id 'java-library'
@@ -15,7 +16,7 @@ dependencies {
  compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.1.6.RELEASE'
  compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.6.RELEASE'
  compile group: 'org.springframework.boot', name: 'spring-boot-devtools', version: '2.1.6.RELEASE'
- testCompile group: 'com.h2database', name: 'h2', version: '1.4.199'
+ testCompile group: 'com.h2database', name: 'h2', version: '1.4.195'
  testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.1.6.RELEASE'
  compile group: 'org.springframework.boot', name: 'spring-boot-starter-parent', version: '2.1.6.RELEASE', ext: 'pom'
  compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.9.9'
