@@ -9,3 +9,17 @@ spring:
     console:
       enabled: true
       path: /h2
+  security:
+    user:
+      name: sysbs
+      password: systbspass
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  server:
+    port: 8080
+
+
